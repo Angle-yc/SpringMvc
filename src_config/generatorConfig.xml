@@ -5,7 +5,7 @@
 
 <generatorConfiguration>
     <!--mysql 连接数据库jar 这里选择自己本地位置-->
-    <classPathEntry location="C:\maven\apache-maven-3.5.3\repository\mysql\mysql-connector-java\5.1.30\mysql-connector-java-5.1.30.jar" />
+    <classPathEntry location="C:\maven\apache-maven-3.5.3\repository\mysql\mysql-connector-java\5.1.36\mysql-connector-java-5.1.36.jar" />
     <context id="testTables" targetRuntime="MyBatis3">
         <commentGenerator>
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
@@ -34,8 +34,8 @@
         </javaModelGenerator>
 
         <!-- 生成映射文件的包名和位置-->
-        <sqlMapGenerator targetPackage="main.java.resource.mapping"
-                         targetProject="src">
+        <sqlMapGenerator targetPackage="resources.mapping"
+                         targetProject="src/main/java">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false" />
         </sqlMapGenerator>
